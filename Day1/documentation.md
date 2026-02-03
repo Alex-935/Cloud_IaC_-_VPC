@@ -109,6 +109,7 @@
     Settings:
         - Destination: 0.0.0.0/0
         - Target: Internet Gateway, Add your internet gateway
+        - This allows any IP to communicate with our class app.
 
     - Click "save changes"
 
@@ -148,5 +149,38 @@ Remake the VPC again, document in depth this time (Screenshots and step by step 
     Try to automate app and db deployment in your VPC by using your own images and user data 
 
  
+## Deployment
+
+    - Make the DB instance
+    - Makes sure to change VPC to your VPC
+    - Your sg won't show up unless you are on the right vpc
+
+    - You need to change "subnet" to your private subnet
+    - Auto-Assign public IP needs to be disabled as it is a private instance
+
+![alt text](images/mongodbInstanceSettings.png)
+
+    - Do the same for the app instance
+    - Subnet needs to be set to your public subnet
+    - Because this one is public facing, make sure to set "Auto-assign public IP" to "Enable".
+
+![alt text](images/appDeployInstanceSettings.png)
+
+    - SSH into the app, make sure to SSH in as "ubuntu" rather than "root"
 
 
+    - Update the evnironment variable, using the private IP Address, and check it's changed:
+
+```
+ export DB_HOST=mongodb://10.0.3.<ip>:27017/posts
+ printenv DB_HOST
+```
+
+    - cd into nodejs2-sparta-test-app-2025/app
+
+    - Seed the database and start:
+
+```
+node seeds/seed.js
+pm2 start app.js
+```
