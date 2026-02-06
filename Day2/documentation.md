@@ -13,7 +13,7 @@ When cleaning up VPC (i.e. deleting it) see below for recommend order:
     8. the public subnet
 
 
-## Until 11:45
+## Further Tasks
 
     - Understand VPCs and how they work
     - Get deployment of app and db working inside VPC
