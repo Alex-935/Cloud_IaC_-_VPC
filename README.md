@@ -18,3 +18,6 @@
 
 ## General Terraform Documentation and Important Notes:
  - https://github.com/Alex-935/Cloud_IaC_-_VPC/blob/main/Day5/terraformDocumentation.md
+
+- This course is a follow-up to the App Deployment Workshop also hosted by Sparta Education, that repository is linked below:
+  - https://github.com/Alex-935/AppDeploymentWorkshop
