@@ -1,4 +1,5 @@
 
+## Tasks:
 1. Improve ec2 creation main.tf
     Add key pair
     Assign SG
@@ -15,7 +16,7 @@
 
 
 
-## 4.
+## Making a github repo with terraform
 
 - Inside GitHub, generate a Personal Access Token
 - click on settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token
@@ -28,7 +29,7 @@
 
 ![alt text](generatePersonalAccessToken.png)
 
-### Configure the GitHub Provider
+### main.tf file:
 ```
 provider "github" {
   token = "<token>"
