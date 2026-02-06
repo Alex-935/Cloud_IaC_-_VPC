@@ -53,3 +53,5 @@ When cleaning up VPC (i.e. deleting it) see below for recommend order:
 
     - A route table manages where traffic goes
     - The default route table allows private routing between subnet resources
+
+![alt text](VPCDiagram.png)

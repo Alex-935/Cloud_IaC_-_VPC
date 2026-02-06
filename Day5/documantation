@@ -1,0 +1,30 @@
+What kind of colleague are you?
+What motivates you?
+How do you prioritise at work?
+Why DevOps?
+
+ 
+
+Explain VPC architecture you have implemented
+What is a port?
+How should you write Terraform code?
+
+
+Tell me about a problem or blocker you had when writing TF code. How did you solve it?
+
+
+Things to keep in mind when using the cloud
+Cloud deployment models?
+Cloud service types?
+SLA vs SLO vs SLI?
+DevOps vs SRE vs Platform Engineer vs L2/L3 Support?
+
+
+Cloud Computing Types: Iaas, Paas, Saas
+https://aws.amazon.com/types-of-cloud-computing/
+
+Cloud deployment models: Public, Private, Hybrid Cloud, Multi-Cloud
+https://www.geeksforgeeks.org/computer-science-fundamentals/cloud-deployment-models/ 
+
+
+![alt text](image.png)

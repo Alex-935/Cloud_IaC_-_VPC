@@ -1,20 +1,17 @@
 # Select aws as provider --> downloads plugins needed to interact with aws (terraform init)
 provider "aws" {
-  region = var.aws-region
+  region = "eu-west-1"
 }
-# "eu-west-1"
 
 # Which service/resource do we want?
 # resource(key word) "serviceName" "reference name inside code" {}
 resource "aws_instance" "test_instance_1" {
 
   # AMI ID?
-  ami = var.ami-id
-  # "ami-03446a3af42c5e74e"
+  ami = "ami-03446a3af42c5e74e"
 
   # instance type?
-  instance_type = var.instance-type
-  # "t3.micro"
+  instance_type = "t3.micro"
 
   # add public id?
   associate_public_ip_address = true

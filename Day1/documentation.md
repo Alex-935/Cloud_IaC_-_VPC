@@ -56,8 +56,6 @@
 ![alt text](images/subnetSettings1.png)
 ![alt text](images/subnetSettings2.png)
 
-![alt text](subnetsList.png)
-
 ## 3. Create Internet Gateway
 
     - Go to "Internet Gateway" on left hand menu
